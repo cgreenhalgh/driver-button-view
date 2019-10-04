@@ -21,5 +21,5 @@ LABEL databox.type="driver"
 
 EXPOSE 8080
 
-#CMD ["npm","run","start-prod"]
-CMD ["sleep", "30000000"]
+CMD ["npm","run","start-prod"]
+#CMD ["sleep", "30000000"]
