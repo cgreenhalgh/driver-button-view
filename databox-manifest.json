@@ -1,0 +1,35 @@
+{
+    "manifest-version": 1,
+    "name": "driver-button-view",
+    "version": "0.1.0",
+    "description": "button view",
+    "author": "chris.greenhalgh@nottingham.ac.uk",
+    "licence": "MIT",
+    "databox-type": "driver",
+    "tags": [
+    ],
+    "homepage": "https://github.com/cgreenhalgh/driver-button-view",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cgreenhalgh/driver-button-view.git"
+    },
+    "datasources": [],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "export-whitelist": [],
+    "resource-requirements": {
+        "store": "core-store"
+    },
+    "provides": [
+        {
+            "data-source-type": "button-view-pressed:1",
+            "description": "Button presses",
+            "store-type": "ts/blob"
+        },
+	{
+		"data-source-type": "button-view-html:1",
+		"description": "Button appearance",
+		"store-type": "ts/blob"
+	}
+    ]
+}
