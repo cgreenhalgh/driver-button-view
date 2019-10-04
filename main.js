@@ -84,8 +84,10 @@ store.RegisterDatasource(pressedMetadata).then(() => {
 		}
 		// previous messages
 		store.TSBlob.Latest( htmlMetadata.DataSourceID )
-		.then((message) => {
-			handleHtml(message);
+		.then((messages) => {
+			if (messages.length>0) {
+				handleHtml(messages[0]);
+			}
 		})
 		.catch((err) => {
 			console.log(`error handling old value`, err);
